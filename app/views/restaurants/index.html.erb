@@ -1,1 +1,9 @@
 <h1> Good Eats!  </h1>
+
+
+
+  <ul>
+    <% @restaurants.each do |r|%>
+      <li> <%= r.name %> - <%= r.city %> <%= r.state%> </li>
+    <% end %>
+  </ul>

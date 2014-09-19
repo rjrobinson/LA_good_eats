@@ -6,8 +6,17 @@ class RestaurantsController < ApplicationController
 ####################
 
   def index
+    @restaurants = Restaurants.all
   end
 
 
+  def show
+    @restaurants = Restaurants.find(params[:id])
+  end
 
-end
+  def new
+    @restaurants = Restaurants.new
+  end
+
+
+end # of class
