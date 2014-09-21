@@ -1,3 +1,8 @@
 <h1><%= @restaurant.name %>   </h1>
 <h3><%= @restaurant.address %></h3>
 <h4><%= @restaurant.city.titleize %> || <%= @restaurant.state %><%= @restaurant.zip_code %></h4>
+
+
+<h2> REVIEWS </h2>
+
+<h2><a href="<%= @restaurant.id %>/reviews/new">Add a Review</a></h2>
