@@ -1,10 +1,10 @@
-class RestaurantController < ApplicationController
-
-####################
-  # Method / Routes
-####################
-
-  def index
-  end
-
-end
+# class RestaurantController < ApplicationController
+#
+# ####################
+#   # Method / Routes
+# ####################
+#
+#   def index
+#   end
+#
+# end

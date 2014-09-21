@@ -4,6 +4,7 @@
 
   <ul>
     <% @restaurants.each do |r|%>
-      <li> <%= r.name %> - <%= r.city %> <%= r.state%> </li>
+      <li> <%= r.name %> - <%= r.city.titleize %>--<%= r.state%> </li>
+
     <% end %>
   </ul>
