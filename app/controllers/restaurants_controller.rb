@@ -10,9 +10,9 @@ class RestaurantsController < ApplicationController
   end
 
 
-  # def show
-  #   @restaurants = Restaurants.find(params[:id])
-  # end
+  def show
+    @restaurant = Restaurant.find(params[:id])
+  end
 
   def new
     @restaurant = Restaurant.new
@@ -27,7 +27,7 @@ class RestaurantsController < ApplicationController
       render 'new'
     end
   end
-  
+
 
 
 

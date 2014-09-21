@@ -1,10 +1,12 @@
 <h1> Good Eats!  </h1>
-
+<p>
+  Got a place? <a href="/restaurants/new"> ||> ADD IT! <||</a>
+</p>
 
 
   <ul>
     <% @restaurants.each do |r|%>
-      <li> <%= r.name %> - <%= r.city.titleize %>--<%= r.state%> </li>
+      <li><a href="/restaurants/<%= r.id %>"><%= r.name %> - <%= r.city.titleize %>--<%= r.state%></a></li>
 
     <% end %>
   </ul>
