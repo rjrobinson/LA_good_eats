@@ -6,7 +6,7 @@ class RestaurantsController < ApplicationController
 ####################
 
   def index
-    @restaurants = Restaurant.all
+    @restaurants = Restaurant.order(created_at: :desc).limit(10)
   end
 
 
