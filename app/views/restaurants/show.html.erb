@@ -4,5 +4,9 @@
 
 
 <h2> REVIEWS </h2>
-
+<ul>
+  <% @restaurant.reviews.limit(10).each do |comment| %>
+    <li><%= comment.body  %></li>
+  <% end %>
+</ul>
 <h2><a href="<%= @restaurant.id %>/reviews/new">Add a Review</a></h2>

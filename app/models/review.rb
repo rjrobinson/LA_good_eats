@@ -4,7 +4,7 @@ class Review < ActiveRecord::Base
 ### Associations ###
 ####################
 
-  belongs_to :restaurants
+  belongs_to :restaurant
 
 
 
